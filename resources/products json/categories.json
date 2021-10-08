@@ -1,0 +1,22 @@
+[
+  {
+    "id": 1,
+    "group_name": "Family & Sharing"
+  },
+  {
+    "id": 2,
+    "group_name": "Chicken & Fish"
+  },
+  {
+    "id": 3,
+    "group_name": "Beef"
+  },
+  {
+    "id": 4,
+    "group_name": "Drinks"
+  },
+  {
+    "id": 5,
+    "group_name": "Desserts"
+  }
+]

@@ -1,0 +1,128 @@
+[
+  {
+    "id": 1,
+    "product_name": "Chicken McPieces - 6pc",
+    "price": 8.7,
+    "thumbnail": "1.jpeg",
+    "category_id": 1
+  },
+  {
+    "id": 2,
+    "product_name": "Chicken McNuggets - 10pc",
+    "price": 8.7,
+    "thumbnail": "2.jpeg",
+    "category_id": 1
+  },
+  {
+    "id": 3,
+    "product_name": "Chicken McNuggets - 20pc",
+    "price": 14.6,
+    "thumbnail": "3.jpeg",
+    "category_id": 1
+  },
+  {
+    "id": 4,
+    "product_name": "McChicken",
+    "price": 7.35,
+    "thumbnail": "4.jpeg",
+    "category_id": 2
+  },
+  {
+    "id": 5,
+    "product_name": "Filet-O-Fish",
+    "price": 5.95,
+    "thumbnail": "5.jpeg",
+    "category_id": 2
+  },
+  {
+    "id": 6,
+    "product_name": "Chicken 'n' Cheese",
+    "price": 4.7,
+    "thumbnail": "6.jpeg",
+    "category_id": 2
+  },
+  {
+    "id": 7,
+    "product_name": "Double McChicken",
+    "price": 9.3,
+    "thumbnail": "7.jpeg",
+    "category_id": 2
+  },
+  {
+    "id": 8,
+    "product_name": "Double Filet-O-Fish",
+    "price": 7.75,
+    "thumbnail": "8.jpeg",
+    "category_id": 2
+  },
+  {
+    "id": 9,
+    "product_name": "Big Mac",
+    "price": 7.1,
+    "thumbnail": "9.jpeg",
+    "category_id": 3
+  },
+  {
+    "id": 10,
+    "product_name": "Wagyu Beef",
+    "price": 11.05,
+    "thumbnail": "10.jpeg",
+    "category_id": 3
+  },
+  {
+    "id": 11,
+    "product_name": "Cheese Burger",
+    "price": 4.35,
+    "thumbnail": "11.jpeg",
+    "category_id": 3
+  },
+  {
+    "id": 12,
+    "product_name": "Cappuccino ",
+    "price": 4.3,
+    "thumbnail": "12.jpeg",
+    "category_id": 4
+  },
+  {
+    "id": 13,
+    "product_name": "Mocha",
+    "price": 4.9,
+    "thumbnail": "13.jpeg",
+    "category_id": 4
+  },
+  {
+    "id": 14,
+    "product_name": "Latte",
+    "price": 4.3,
+    "thumbnail": "14.jpeg",
+    "category_id": 4
+  },
+  {
+    "id": 15,
+    "product_name": "Hot Chocolate",
+    "price": 4.3,
+    "thumbnail": "15.jpeg",
+    "category_id": 4
+  },
+  {
+    "id": 16,
+    "product_name": "Hot Apple Pie",
+    "price": 3.25,
+    "thumbnail": "16.jpeg",
+    "category_id": 5
+  },
+  {
+    "id": 17,
+    "product_name": "Chocolate Mud Muffin",
+    "price": 4,
+    "thumbnail": "17.jpeg",
+    "category_id": 5
+  },
+  {
+    "id": 18,
+    "product_name": "Blueberry Muffin",
+    "price": 4,
+    "thumbnail": "18.jpeg",
+    "category_id": 5
+  }
+]
