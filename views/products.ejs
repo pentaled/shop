@@ -1,0 +1,18 @@
+<%- include('header'); -%>
+    <div class="list">
+        <% if(products.length > 0){ %>
+            <% products.forEach((item) => { %>
+                <div class="card">
+                    <div class="card-body">
+                        <%= item.product_name %>
+                        <%= item.price %>
+                        <img src="/assets/thumbnails/<%= item.thumbnail %>" alt="<%= item.product_name %>" width="120px" height="120px">
+                        <a href="/cart/add" class="button">Add to cart</a>
+                    </div>
+                </div>
+            <% }); %>
+            <% } else { %>
+                <p>Error. Server error. Products cannot be displayed.</p>
+                <% }; %>
+    </div>
+    <%- include('footer'); -%>
