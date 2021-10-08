@@ -1,0 +1,10 @@
+const express = require('express')
+require('dotenv').config()
+const ProductRoute = require('./routes/ProductRoute')
+
+const app = express()
+app.listen(3000)
+app.use(express.urlencoded({ extended: true }))
+app.set('view engine', 'ejs')
+app.use('/assets', express.static('public'))
+app.use('/', ProductRoute)
