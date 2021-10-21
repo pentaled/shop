@@ -13,5 +13,9 @@ module.exports = {
     async getAllProducts() {
         const [rows] = await this.execute('SELECT * FROM products;')
         return rows
+    },
+    async getProductById(id) {
+        const [rows] = await this.execute('SELECT * FROM products WHERE products.id = ?', [id])
+        return rows
     }
 }
