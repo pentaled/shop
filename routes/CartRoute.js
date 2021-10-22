@@ -5,6 +5,7 @@ const router = express.Router()
 
 router.get('/', cartController.showCart)
 router.get('/add/:id', cartController.cartAdd)
+router.post('/update/qty', cartController.cartUpdateQty)
 
 module.exports = router
 // export router
