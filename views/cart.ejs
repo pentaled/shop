@@ -1,0 +1,13 @@
+<%- include('header'); -%>
+    <section class="food">
+    <div class="list">
+        <% if(cart.length > 0){ %>
+            <% cart.forEach((item) => { %>
+                <%= item.product_name %>
+            <% }); %>
+            <% } else { %>
+                <p>Your cart is empty</p>
+                <% }; %>
+    </div>
+    </section>
+    <%- include('footer'); -%>
