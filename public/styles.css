@@ -135,3 +135,41 @@ header a:hover {
     top: 10px;
     border-radius: 50%;
 }
+
+.row.row-product {
+    padding: 20px;
+    border-bottom: black 1px solid;
+}
+
+.card-two {
+    border-radius: 15px;
+    margin: 7.5px;
+    transition: 0.6s;
+    padding: 20px;
+}
+
+.card-two:hover {
+    transition: 0.6s; 
+    box-shadow: 0px 0px 25px -5px rgba(0,0,0,0.7);
+}
+
+.form-control {
+    width: 100px;
+}
+
+.input-update {
+    padding: 0 0.375rem;
+}
+
+.input-product {
+    line-height: 2.5;
+}
+
+.input-price {
+    text-align: right;
+    line-height: 2.5;
+}
+
+.row-product {
+    padding: 0.375rem 0;
+}

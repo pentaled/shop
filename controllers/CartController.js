@@ -32,7 +32,24 @@ const cartController = {
     showCart(req, res) {
         const cart = req.session.cart ? req.session.cart : []
         res.render('cart', { cart }) 
+    },
+    cartUpdateQty(req, res){
+        if(req.body.quantity && req.body.id) {
+            // session -> cart -> array of items -> item has an ID -> update qty
+            const cart = req.session.cart ? req.session.cart : []
+            const updatedCart = cart.map(item => {
+                if(item.id == req.body.id) {
+                    item.qty = req.body.quantity
+                }
+                return item
+            })
+            console.log('cart',cart )
+            console.log('updated',updatedCart )
+            req.session.cart = updatedCart
+        }
+        res.redirect('/cart')
     }
+ 
 }
 
 module.exports = cartController
