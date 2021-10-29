@@ -15,11 +15,13 @@
         <a href="/" class="logo">
           Logo
         </a>
-          <button type="button" class="btn btn-primary" id="cart button">
-          <a href="/cart/" class="action">
-            <i class="fas fa-shopping-cart" aria-hidden="false"></i>
-            <span class="badge bg-secondary"><%= cart.length %></span>
-          </a>
-          </button>
       </header>
+      <footer>
+        <!--<span class="cart-badge"><%= cart.length %></span>-->
+        <div class="buttons" data-tooltip="<%= cart.length %>">
+          <a href="/cart/" class="action">
+            <i class="fas fa-shopping-cart"></i>
+          </a>
+        </div>
+      </footer>
         <div id="main">
