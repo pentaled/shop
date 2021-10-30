@@ -88,7 +88,7 @@ footer {
     width: 10%;
     display: flex;
     justify-content: space-between;
-    align-items: left;
+    
     transition: 0.6s;
     z-index: 100000;
     background-color: transparent;
@@ -128,12 +128,46 @@ footer {
     color:rgb(112, 112, 241)
 }
 /*PRODUCTS.EJS*/
-.grid{
+.grid {
     display: grid;
+    justify-content: center;
+    align-items: center;
     position: relative;
     width: 100%;
     grid-template-columns: auto auto auto auto;
     padding: 10px;
+    transition: 0.6s;
+}
+
+@media only screen and (max-width: 1250px) {
+    .grid {
+        grid-template-columns: auto auto auto;
+    }
+}
+
+@media only screen and (max-width: 920px) {
+    .grid {
+        grid-template-columns: auto auto;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    footer {
+        display: flex;
+        margin-right: 50px;
+    }
+}
+
+@media only screen and (max-width: 620px) {
+    .grid {
+        grid-template-columns: auto;
+    }
+}
+
+@media only screen and (max-width: 375px) {
+    header {
+        padding-left: 20px;
+    }
 }
 
 .card-body {
@@ -220,48 +254,45 @@ footer {
     box-shadow: 0px 0px 25px -5px rgb(112, 112, 241);
 }
 
+.card-imgan {
+    height: 150px;
+    border-radius: 10px;
+    margin-right: 150px;
+}
+
 @media only screen and (max-width: 992px) {
     .product {
-        padding: 0px;
-        background-color: aqua;
-        align-items: left;
+        height: 210px;
     }
-    .input-product {
-        line-height: 2.5;
+    .list {
+        display: grid;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+        width: 100%;
+        grid-template-columns: 540px;
+        grid-auto-rows: 230px;
         padding: 10px;
-        margin-right: 100px;
-    }
-    .input-price {
-        padding: 10px;
-    }
-    .btnt {
-        padding: 10px;
-        margin-left: 10px;
     }
     .card-imgan {
+        margin-right: 0px;
         height: 100px;
-        border-radius: 10px;
-        margin-left: 100px;
+        margin-left: 5px;
+    }
+    .input-product {
+        margin-left: 20px;
+        margin-right: 0px;
+    }
+    .input-price {
+        margin: 10px;
     }
 }
 
-/*@media only screen and (max-width: 580px) {
-    .buttons {
-    left: -75px;
-    }
-}
-*/
 .list {
     padding: 20px;
     width: auto;
     border-radius: 15px;
     width: 100%;
-}
-
-.card-imgan {
-    height: 150px;
-    border-radius: 10px;
-    margin-right: 150px;
 }
 
 .card-imgan2 {
