@@ -1,13 +1,13 @@
 <%- include('header'); -%>
-    <div class="grid">
+    <div class="grid"><!--.grid-->
         <% if(products.length > 0){ %>
             <% products.forEach((item) => { %>
-                <div class="card" style="width: 18rem;">
-                    <div class="g-col-6">
+                <div class="card" style="width: 18rem;"><!--.card-->
+                    <div class="g-col-6"><!--.g-col-6-->
                         <div class="card-body">
-                        <img src="/assets/thumbnails/<%= item.thumbnail %>" class="card-img-top">                        
+                        <img src="/assets/thumbnails/<%= item.thumbnail %>" class="card-imgan2">                        
                         <h5 class="card-title"><%= item.product_name %></h5>
-                        <p class="card-text">$<%= item.price %></p>
+                        <p class="card-text">$ <%= Number.parseFloat(item.price).toFixed(2) %></p>
                         <a href="/cart/add/<%= item.id %>" class="btn btn-primary">Add to cart</a>
                         </div>  
                     </div>  
