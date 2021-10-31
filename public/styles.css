@@ -270,7 +270,7 @@ footer {
         justify-content: center;
         position: relative;
         width: 100%;
-        grid-template-columns: 540px;
+        grid-template-columns: 560px;
         grid-auto-rows: 230px;
         padding: 10px;
     }
@@ -285,6 +285,53 @@ footer {
     }
     .input-price {
         margin: 10px;
+        width: 75px;
+    }
+}
+
+@media only screen and (max-width: 560px) {
+    .product {
+        display: grid;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+        width: 200px;
+        height: 400px;
+        padding: 10px;
+        grid-template-columns: 200px;
+        grid-auto-rows: 80px;
+        
+    }
+    .list {
+        grid-template-columns: 200px;
+        grid-auto-rows: 430px;
+    }
+    .form-control {
+        margin: 0px;
+        margin-left: 45px;
+    }
+    .form {
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    .input-product {
+        margin-left: 0px;
+        text-align: center;
+    }
+    .form-group {
+        width: 100px;
+        text-align: center;
+    }
+    .card-imgan {
+        text-align: center;
+        margin-left: 0px;
+    }
+    .btnt {
+        margin-left: 60px;
+    }
+    .input-price {
+        margin-left: 50px;
     }
 }
 
@@ -293,6 +340,8 @@ footer {
     width: auto;
     border-radius: 15px;
     width: 100%;
+    justify-content: center;
+    align-items: center;
 }
 
 .card-imgan2 {
