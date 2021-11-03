@@ -13,17 +13,19 @@
       <nav class="navbar navbar-light bg-light">
         <div class="container-fluid">
           <a href="/" class="navbar-brand">
-            <i class="fas fa-meteor"></i>
+            <i class="fas fa-mug-hot"></i>
           </a>
-          <div class="d-flex">
-            <a href="/cart/" class="btn btn-primary position-relative">
-              <i class="fas fa-shopping-cart"></i>
-              <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
-                <%= cart.length %>
-                <span class="visually-hidden">Total item in cart</span>
-              </span>
-            </a>
-          </div>
         </div>
       </nav>
+      <footer>
+        <div class="d-flex">
+          <a href="/cart/" class="btn btn-primary position-relative">
+            <i class="fas fa-shopping-cart"></i>
+            <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+              <%= cart.length %>
+              <span class="visually-hidden">Total item in cart</span>
+            </span>
+          </a>
+        </div>
+      </footer>
         <div id="main" class="container">
