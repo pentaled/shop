@@ -88,7 +88,6 @@ footer {
     width: 10%;
     display: flex;
     justify-content: space-between;
-    
     transition: 0.6s;
     z-index: 100000;
     background-color: transparent;
@@ -119,8 +118,7 @@ footer {
     border-radius: 50%;
     background-color: rgb(211, 211, 211);
     color: #666666;
-    padding: 15.5px 20.2px;
-    
+    padding: 15.5px 20.2px;  
 }
 
 .action:hover {
@@ -308,7 +306,8 @@ footer {
     }
     .form-control {
         margin: 0px;
-        margin-left: 45px;
+        margin-left: none;
+        padding: none;
     }
     .form {
         justify-content: center;
@@ -348,4 +347,17 @@ footer {
     height: 210px;
     border-radius: 10px;
     margin: 0px;
+}
+
+.btn-remove {
+    text-transform: uppercase;
+    font-size: 0.9rem;
+}
+
+.total {
+    border-radius: 15px;
+    
+    transition: 0.6s;
+    background-color: whitesmoke;
+    border: none;
 }

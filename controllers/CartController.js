@@ -30,8 +30,14 @@ const cartController = {
         res.redirect('/')
     },
     showCart(req, res) {
+        let cartTotal = 0;
         const cart = req.session.cart ? req.session.cart : []
-        res.render('cart', { cart }) 
+        if(cart.length > 0) {
+            cart.forEach(item => {
+                cartTotal += eval(item.qty) * eval(item.price)
+            })
+        }
+        res.render('cart', { cart, cartTotal }) 
     },
     cartUpdateQty(req, res){
         if(req.body.quantity && req.body.id) {
@@ -48,8 +54,14 @@ const cartController = {
             req.session.cart = updatedCart
         }
         res.redirect('/cart')
+    },
+    cartDestroyItem(req, res){
+        const cart = req.session.cart ? req.session.cart : []
+        const updatedCart = cart.filter(item => item.id != req.params.id)
+        req.session.cart = updatedCart
+        res.redirect('/cart')
     }
- 
+    
 }
 
 module.exports = cartController

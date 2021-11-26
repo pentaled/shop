@@ -20,15 +20,18 @@
                             </div>
                             <button type="submit" class="btnt">Update</button>
                         </form>
+                        <a href="/cart/remove/<%= item.id %>" class="btn btn-remove">Remove</a>
                     </div>
                     <div class="col-lg-2 input-price">
                         $ <%= Number.parseFloat(eval(item.qty * item.price)).toFixed(2) %>
                     </div>
                 </div>
                 <% }); %>
+                <div style="text-align: center;" class="total">
+                    Total: $ <%= Number.parseFloat(cartTotal).toFixed(2) %>
+                </div>
                     <% } else { %>
-                        <p>Your cart is empty.</p>
+                        <p style="text-align: center;">Your cart is empty.</p>
                         <% }; %>
     </div>
     <%- include('footer'); -%>
-
